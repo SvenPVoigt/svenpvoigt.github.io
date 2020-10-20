@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<img src="{{ site.baseurl }}/static/images/Profile.JPG" alt="Sven Voigt in Lisbon" width="200"/>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hey I'm Sven and on this page you can find links to my blog, tutorials, and other projects.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Follow me on my quest to keep learning about everything and anything.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Maybe I'll find the purpose to life along the way.
