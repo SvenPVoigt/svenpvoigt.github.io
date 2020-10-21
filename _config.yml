@@ -29,6 +29,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+collections:
+  algos:
+    output: true
+  posts:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

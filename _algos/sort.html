@@ -1,0 +1,49 @@
+---
+title: Sort
+layout: default
+---
+
+<svg id="barchart" style="width:100%;height:100%"></svg>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<script>
+  var svg = document.getElementById("barchart");
+  console.log(svg);
+  var rect = svg.getBoundingClientRect();
+  console.log(rect);
+  var height = rect.width;
+  var width = rect.height;
+  console.log(width);
+
+  var svg = d3.select("#barchart");
+
+  var array = [];
+  while (array.length < 20) {
+    array.push(Math.round(Math.random()*255));
+  }
+
+  margin = {top: 0, right: 0, bottom: 0, left: 0};
+
+  x = d3.scaleBand()
+    .domain(d3.range(array.length))
+    .range([margin.left, width - margin.right])
+    .padding(0.1);
+
+  y = d3.scaleLinear()
+    .domain([0, d3.max(array, d => d)]).nice()
+    .range([height - margin.bottom, margin.top]);
+
+  console.log(x(10));
+  console.log(y(100));
+
+  svg.append("g")
+    .attr("fill", "#666")
+  .selectAll("rect")
+  .data(array)
+    .join("rect")
+    .attr("x", (d,i) => x(i))
+    .attr("y", d => y(d))
+    .attr("height", d => y(0) - y(d))
+    .attr("width", x.bandwidth());
+</script>

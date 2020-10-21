@@ -1,8 +1,12 @@
 ---
-title: algorithms
+title: Algorithms
 stylesheets:
   - algorithms
 layout: default
 ---
 
 <p class="algo">This is where algorithms go</p>
+
+{% for a in site.algos %}
+  <a href="{{ site.baseurl }}{{ a.url }}">{{ a.title }}</a>
+{% endfor %}
