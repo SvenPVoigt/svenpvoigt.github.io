@@ -15,6 +15,7 @@
   {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="{{ site.baseurl }}/static/css/{{stylesheet}}.css">
   {% endfor %}
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -22,15 +23,15 @@
     {% include header.html %}
   </header>
 
-  <div class="maincontainer griditem">
-    <div class="leftcontent griditem">
+  <div class="maincontainer gridfill">
+    <div class="leftcontent gridfill">
       {% if page.leftcontent %}
         {% include page.leftcontent %}
       {% else %}
         {% include defaultleft.html %}
       {% endif %}
     </div>
-    <div class="content griditem">
+    <div class="content gridfill" style="grid-gap:10px;">
       {{ content }}
     </div>
   </div>
