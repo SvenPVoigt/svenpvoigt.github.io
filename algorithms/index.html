@@ -3,10 +3,17 @@ title: Algorithms
 stylesheets:
   - algorithms
 layout: default
+category: Algorithms
 ---
 
 <p class="algo">This is where algorithms go</p>
 
-{% for a in site.algos %}
-  <a href="{{ site.baseurl }}{{ a.url }}">{{ a.title }}</a>
+<p>
+{% for s in site.categories %}
+  s
+{% endfor %}
+</p>
+
+{% for post in site.posts["algorithms"] %}
+  <a href="{{ a.url }}">{{ a.title }}</a>
 {% endfor %}

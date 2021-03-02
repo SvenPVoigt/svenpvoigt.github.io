@@ -6,26 +6,45 @@ clicked, overlays a page with transparency and links
 
 /* links general */
 a:link {
-  color: #ddd;
+  color: #333;
   text-decoration: none;
   cursor: pointer;
 }
 a:visited {
-  color: #ddd;
+  color: #333;
 }
 a:hover {
-  color: #888;
+  color: #666;
 }
 
 /* links menu */
-a:link.home {
+a.home:link {
+  color: #ddd;
+  font-size: 2em;
+  display: block;
+}
+a.home:visited {
+  color: #ddd;
+  font-size: 2em;
+  display: block;
+}
+a.home:hover {
+  color: #ddd;
   font-size: 2em;
   display: block;
 }
 
-a:link.page {
+a.headerlink:link {
+  color: #ddd;
   font-size: 1.2em;
   display: block;
+}
+
+a.headerlink:visited {
+  color: #ddd;
+}
+a.headerlink:hover {
+  color: #888;
 }
 
 /* Defining the overlay */

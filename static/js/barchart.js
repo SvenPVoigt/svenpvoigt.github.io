@@ -1,4 +1,4 @@
-function barchart(svg, rect, x, y, c, margin={top: 25, right: 25, bottom: 25, left: 25}) {
+function barchart(svg, x, y, c, margin={top: 25, right: 25, bottom: 25, left: 25}) {
   if (typeof(x)=="undefined") {
     return;
   } else if (typeof(y)=="undefined") {
@@ -17,7 +17,9 @@ function barchart(svg, rect, x, y, c, margin={top: 25, right: 25, bottom: 25, le
   this.x = x;
   this.y = y;
   this.margin = margin;
+  this.svg = svg;
 
+  var rect = this.svg.node().getBoundingClientRect();
   this.height = rect.height;
   this.width = rect.width;
 }
@@ -29,31 +31,31 @@ barchart.prototype.makeData = function() {
 
 
 barchart.prototype.initChart = function() {
-  xScale = d3.scaleBand()
+  this.xScale = d3.scaleBand()
     .domain(this.x)
     .range([this.margin.left, this.width - this.margin.right])
     .padding(0.1);
 
-  yScale = d3.scaleLinear()
+  this.yScale = d3.scaleLinear()
     .domain([0, d3.max(this.y)]).nice()
     .range([this.height - this.margin.bottom, this.margin.top]);
 
-  xAxis = g => g
+  this.xAxis = g => g
     .attr("transform", `translate(0,${this.height - this.margin.bottom})`)
-    .call(d3.axisBottom(xScale).tickFormat(i => this.x[i]).tickSizeOuter(0));
+    .call(d3.axisBottom(this.xScale).tickFormat(i => this.x[i]).tickSizeOuter(0));
 
-  yAxis = g => g
+  this.yAxis = g => g
     .attr("transform", `translate(${this.margin.left},0)`)
-    .call(d3.axisLeft(yScale).ticks(null))
+    .call(d3.axisLeft(this.yScale).ticks(null))
     .call(g => g.select(".domain").remove());
 
-  svg.append("g")
-      .call(xAxis);
+  this.svg.append("g")
+      .call(this.xAxis);
 
-  svg.append("g")
-      .call(yAxis);
+  this.svg.append("g")
+      .call(this.yAxis);
 
-  this.bars = svg.append("g");
+  this.bars = this.svg.append("g");
 
   this.drawBars();
 }
@@ -64,18 +66,29 @@ barchart.prototype.selectBars = function(ind, c="#5d5", cDefault="#555") {
   this.drawBars();
 }
 
-barchart.prototype.drawBars = function(y) {
-  if (typeof(y)!="undefined") {
-    this.y=y;
+barchart.prototype.deselectBars = function(cDefault="#555") {
+  this.cList.fill(cDefault);
+  this.drawBars();
+}
+
+barchart.prototype.drawBars = function(x,y) {
+  if (typeof(x)!="undefined") {
+    if (typeof(y)!="undefined") {
+      this.x = x;
+      this.y = y;
+    } else {
+      this.y = x;
+    }
   }
+
   var data = this.makeData();
 
   this.bars.selectAll("rect")
   .data(data)
     .join("rect")
-    .attr("x", (d,i) => xScale(d.x))
-    .attr("y", d => yScale(d.y))
-    .attr("height", d => yScale(0) - yScale(d.y))
-    .attr("width", xScale.bandwidth())
+    .attr("x", (d,i) => this.xScale(d.x))
+    .attr("y", d => this.yScale(d.y))
+    .attr("height", d => this.yScale(0) - this.yScale(d.y))
+    .attr("width", this.xScale.bandwidth())
     .attr("fill", (d,i) => this.cList[i]);
 }

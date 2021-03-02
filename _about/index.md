@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: post
 title: About
-permalink: /about/
 ---
 
 <img src="{{ site.baseurl }}/static/images/Profile.JPG" alt="Sven Voigt in Lisbon" width="200"/>

@@ -29,11 +29,18 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-spaceship
 collections:
-  algos:
+  blog:
     output: true
-  posts:
+  tutorials:
     output: true
+  projects:
+    output: true
+  about:
+    output: true
+permalink: /:categories/:title:output_ext
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

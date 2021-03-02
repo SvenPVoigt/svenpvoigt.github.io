@@ -1,0 +1,11 @@
+{% for category in site.categories %}
+
+<div class="card shadow highlighter">
+  <a class="sitenav container vmiddle card padded" href="/{{category[0]}}/">
+    <div> 
+      {{ category[0] }}
+    </div>
+  </a>
+</div>
+
+{% endfor %}

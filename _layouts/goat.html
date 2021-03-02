@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <title>{{site.title}} - {{page.title}}</title>
+  <meta name="description" content={{site.description}} {{page.description}} />
+  <!-- End Jekyll SEO tag -->
+  <link rel="stylesheet" href="/static/css/goat.css">
+  {% for stylesheet in page.stylesheets %}
+    <link rel="stylesheet" href="/static/css/{{stylesheet}}.css">
+  {% endfor %}
+</head>
+
+<body>
+    <div id="outerbox" class="container fullscreen top">
+        <div id="toprow" class="container row leftmainseparator" style="background-color: var(--c-primary-dark);">
+            <a href="/"><img class="topheight" src="/static/images/logo2.svg"></a>
+            <div id="topRowRemainder" class="container row spaced">
+                <div id="leftstuff" class="container row left spaced padded-left">
+                    {% include collections.html %}
+                </div>
+                <div id="rightstuff" class="container row right">
+                    <div id="options" class="dropdown"></div>
+                </div>
+            </div>
+        </div>
+        {{ content }}
+    </div>
+</body>
+
+</html>

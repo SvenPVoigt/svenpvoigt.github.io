@@ -19,12 +19,12 @@
   <div class="verticallinks">
     {% for page in site.pages %}
       {% if page.title=="Home" %}
-        <a href="{{ site.baseurl }}{{ page.url }}" class="home">{{page.title}}</a>
+        <a class="home" href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a>
       {% endif %}
     {% endfor %}
     {% for page in site.pages %}
       {% if page.title!="Home" and page.title %}
-        <a href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a>
+        <a class="headerlink" href="{{ site.baseurl }}{{ page.url }}">{{page.title}}</a>
       {% endif %}
     {% endfor %}
   </div>

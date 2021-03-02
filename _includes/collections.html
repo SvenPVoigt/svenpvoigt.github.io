@@ -1,0 +1,13 @@
+{% for collection in site.collections %}
+{% if collection.label != "posts" %}
+
+<div class="highlighter container">
+    <a class="sitenav container vmiddle padded" style="font-size: 20px;" href="/{{ collection.label }}/">
+    <div> 
+        {{ collection.label }}
+    </div>
+    </a>
+</div>
+
+{% endif %}
+{% endfor %}
