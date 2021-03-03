@@ -2,7 +2,7 @@
 title: Home
 description: Know when to walk away, know when to run
 category: Tutorial
-layout: goat
+layout: default
 array:
   - one
   - two
@@ -11,10 +11,10 @@ array:
 <div class="cardrack container">
   {% for c in site.collections %}
   {% if c.label != "posts" %}
-  <div class="card">
+  <a class="card shadow" href="/{{c.label}}/">
     <p class="headerp">{{ c.label }}</p>
-    <p>additional info</p>
-  </div>
+    <p class="padded" style="text-align: justify;"> {{ c.description }} </p>
+  </a>
   {% endif %}
   {% endfor %}
 </div>

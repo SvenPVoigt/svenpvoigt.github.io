@@ -27,18 +27,37 @@ github_username:  SvenPVoigt
 # Build settings
 markdown: kramdown
 theme: minima
+  skin: solarized
 plugins:
-  - jekyll-feed
-  - jekyll-spaceship
+  # - jekyll-spaceship
 collections:
   blog:
     output: true
+    description: >-
+      This blog is an expression of artistic or critical thoughts.
+
   tutorials:
     output: true
+    description: >-
+      There are some things that I have to do every so often but not often
+      enough that I remember them by heart. These tutorials help me remember 
+      what I've done in the past that worked. I also want to share that 
+      information because it defines the possibilities for others.
+
   projects:
     output: true
+    description: >-
+      Projects are a demonstration of innovative work. The purposes can include
+      scientific improvements, logical improvements, simplification of tasks,
+      or automation of tasks. They include different applications and may link 
+      to other sites.
+      
   about:
     output: true
+    description: >-
+      Learn about the site and the author.
+
+
 permalink: /:categories/:title:output_ext
 
 
