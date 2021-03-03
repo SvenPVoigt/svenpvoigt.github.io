@@ -132,10 +132,9 @@
 
 .cardrack {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10%;
-    grid-row-gap: 10%;
+    grid-row-gap: 20px;
     padding: 5%;
 }
 

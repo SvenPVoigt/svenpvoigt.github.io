@@ -2,13 +2,15 @@
 title: Home
 description: Know when to walk away, know when to run
 category: Tutorial
-layout: default
+layout: goat
 array:
   - one
   - two
 ---
 
-<div class="cardrack container">
+<div class="container">
+<div> {% include searchbar.html %} </div>
+<div class="cardrack container overflow">
   {% for c in site.collections %}
   {% if c.label != "posts" %}
   <a class="card shadow" href="/{{c.label}}/">
@@ -17,4 +19,5 @@ array:
   </a>
   {% endif %}
   {% endfor %}
+</div>
 </div>

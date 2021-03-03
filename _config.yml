@@ -16,9 +16,9 @@
 title: Sven Voigt
 email: svenpvoigt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Read my posts. You'll need the information later.
+  Get in loser. We're committing securities fraud.
+  I'm gonna steal the Declaration of Independence.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: svenpvoigt
@@ -26,7 +26,11 @@ github_username:  SvenPVoigt
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+# minima:
+#   skin: dark
+
+
 plugins:
   - jekyll-spaceship
 collections:
@@ -55,6 +59,18 @@ collections:
     output: true
     description: >-
       Learn about the site and the author.
+
+  polls:
+    output: true
+    description: >-
+      I want to learn from you. Fill out some polls and let's learn about each
+      other.
+
+  memes:
+    output: true
+    description: >-
+      Sharing laughter. Not strictly memes, but rather any amusing post or story
+      is shared here. This will likely be the most complete section of my website.
 
 
 permalink: /:categories/:title:output_ext

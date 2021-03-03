@@ -1,9 +1,23 @@
-{% for category in site.categories %}
+{% assign collection = page.collection %}
+
+{% assign all_categories = site.pages | where_exp: "item", "item.categories contains page.collection" %}
+
+<div class="card overflow">
+{{ collection }} <br>
+{{ site.pages | map: "url"}} <br>
+{{ site.posts | map: "url"}} <br>
+{{ site.pages | map: "categories"}} <br>
+{{ site.posts | map: "categories"}} <br>
+{{ all_categories }}
+</div>
+
+
+{% for category in all_categories %}
 
 <div class="card shadow highlighter">
-  <a class="sitenav container vmiddle card padded" href="/{{category[0]}}/">
+  <a class="sitenav container vmiddle card padded" href="/{{page.collection}}/feed?{{category}}">
     <div> 
-      {{ category[0] }}
+      {{ category }}
     </div>
   </a>
 </div>
