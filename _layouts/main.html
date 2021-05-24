@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata Values --> 
+    {% include meta.html %}
+
+    <title>{{site.title}} - {{page.title}}</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- {% for stylesheet in page.stylesheets %}
+    <link rel="stylesheet" href="/static/css/{{stylesheet}}.css">
+    {% endfor %} -->
+</head>
+
+<body>
+    <div class="mainDiv" style="z-index:1;">{{content}}</div>
+    <div class="mainDiv darkBG" style="z-index:-1; grid-template-columns: repeat(25, 4vw);">
+        {% for i in (1..500) %}
+        <div id="block{{i}}" style="height: 4vw; width: 4vw;"></div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

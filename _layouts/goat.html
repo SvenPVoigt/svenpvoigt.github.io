@@ -2,18 +2,16 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Metadata Values --> 
+    {% include meta.html %}
 
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
-  <title>{{site.title}} - {{page.title}}</title>
-  <meta name="description" content={{site.description}} {{page.description}} />
-  <!-- End Jekyll SEO tag -->
-  <link rel="stylesheet" href="/static/css/goat.css">
-  {% for stylesheet in page.stylesheets %}
+    <title>{{site.title}} - {{page.title}}</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/goat.css">
+    {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="/static/css/{{stylesheet}}.css">
-  {% endfor %}
+    {% endfor %}
 </head>
 
 <body>

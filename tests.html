@@ -1,0 +1,72 @@
+---
+title: Tests
+description: Testing different html, css, and js functionality
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata Values --> 
+    {% include meta.html %}
+
+    <title>{{site.title}} - {{page.title}}</title>
+
+    <!-- Stylesheets -->
+    <style>
+        @keyframes blink {
+            0% {
+                background-color: blue;
+            }
+            5% {
+                background-color: white;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+
+        div {
+            display: grid;
+        }
+
+        #block1 {
+            animation: blink 2s ease 0s infinite;
+        }
+
+        #block2 {
+            animation: blink 2s ease 1s infinite;
+        }
+
+        #block3 {
+            animation: blink 2s ease 2s infinite;
+        }
+
+        #block4 {
+            animation: blink 2s ease 3s infinite;
+        }
+
+        #block11 {
+            border-right: 3px solid aqua;
+            border-bottom: 3px solid aqua;
+            margin: -1.5px;
+        }
+
+        #block21 {
+            border-right: 3px solid aqua;
+            border-top: 3px solid aqua;
+            margin: -1.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv" style="z-index:1;"></div>
+    <div class="mainDiv" style="display: grid; z-index:-1; grid-template-columns: repeat(10, 10vw); grid-gap: 0px 0px;">
+    {% for i in (1..100) %}
+        <div id="block{{i}}" style="height: 10vw; width: 10vw;"></div>
+    {% endfor %}
+    </div>
+</body>
+
+</html>

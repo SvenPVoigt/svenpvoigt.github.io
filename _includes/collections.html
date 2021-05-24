@@ -1,13 +1,16 @@
-{% for collection in site.collections %}
-{% if collection.label != "posts" %}
+<div style="justify-content:space-around; align-content: center;">
+    <div class="nav transparentFloat">
+        <h1>SVENV</h1>
+        {% for collection in site.collections %}
+            {% if collection.label != "posts" %}
 
-<div class="highlighter container">
-    <a class="sitenav container vmiddle padded" style="font-size: 20px;" href="/{{ collection.label }}/">
-    <div> 
-        {{ collection.label }}
+            <a class="navlink" style="font-size: 3vw;" href="/{{ collection.label }}/">
+            <div style="justify-content: space-around;">
+                <div>{{ collection.label }}</div>
+            </div>
+            </a>
+
+            {% endif %}
+        {% endfor %}
     </div>
-    </a>
 </div>
-
-{% endif %}
-{% endfor %}
