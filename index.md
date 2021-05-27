@@ -1,5 +1,5 @@
 ---
-title: animation
+title: Animated Homepage
 layout: main
 ---
 

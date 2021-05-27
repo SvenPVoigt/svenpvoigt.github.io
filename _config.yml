@@ -16,9 +16,8 @@
 title: Sven Voigt
 email: svenpvoigt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Read my posts. You'll need the information later.
-  Get in loser. We're committing securities fraud.
-  I'm gonna steal the Declaration of Independence.
+  Hop in the van and read my posts on the drive. You'll need the information later.
+  What do you mean why? Yeah we're stealing the Declaration of Independence.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: svenpvoigt

@@ -6,7 +6,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Reggae+One&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Shade&family=Caesar+Dressing&family=Faster+One&family=Fredoka+One&family=Grenze&family=Grenze+Gotisch:wght@300&family=Lato&family=Libre+Barcode+39&family=Monoton&family=Open+Sans&family=Pacifico&family=Press+Start+2P&family=Reggae+One&family=Righteous&family=Train+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Caesar+Dressing&family=Faster+One&family=Fredoka+One&family=Grenze&family=Grenze+Gotisch:wght@300&family=Lato&family=Libre+Barcode+39&family=Monoton&family=Open+Sans&family=Pacifico&family=Press+Start+2P&family=Reggae+One&family=Righteous&family=Train+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Caesar+Dressing&family=Faster+One&family=Fredoka+One&family=Grenze&family=Grenze+Gotisch:wght@300&family=Lato&family=Libre+Barcode+39&family=Monoton&family=Open+Sans&family=Pacifico&family=Press+Start+2P&family=Reggae+One&family=Righteous&family=Train+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lato');
 
 * {
     font-family:'Lato', arial, sans-serif;
@@ -50,16 +52,6 @@ div {
     }
 }
 
-// @for $i from 1 through 500 {
-//     $animationDuration: random(3) + 1;
-//     $animationDelay: random(1000) / 100;
-
-//     #{"#block" + $i} {
-//         background-color: rgb(6, 6, 53);
-//         animation: blink #{$animationDuration + "s"} ease #{$animationDelay + "s"} infinite normal;
-//     }
-
-// }
 
 @keyframes lightup {
     0% {
@@ -100,6 +92,7 @@ div {
     }
 }
 
+
 $dir: normal, reverse;
 
 @for $i from 1 through 500 {
@@ -109,7 +102,6 @@ $dir: normal, reverse;
     #{"#block" + $i} {
         background-color: rgb(6, 6, 53);
         transform: rotate( #{random(4)*90 + deg} );
-        // transform: rotate(5deg);
         margin: -1.5px;
         border-left: 3px solid rgba(54, 181, 255, 0);
         border-top: 3px solid rgba(54, 181, 255, 0);
@@ -122,33 +114,24 @@ $dir: normal, reverse;
 
 }
 
+
 .darkBG {
     background-color: rgb(6, 6, 53);
 }
 
-@keyframes pulse {
-    // 0% {
-    //     background-image: radial-gradient(rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.075) 90%, rgba(255,255,255,0) 110%);
-    //     border: 2px solid rgba(255,255,255,0.2);
-    // }
-    100% {
-        background-color: rgba(255,255,255,0.2);
-        border: 2px solid rgba(255,255,255,0.4);
-    }
-}
 
 .transparentFloat {
-    // background-color: rgba(255,255,255,0.1) ;
     background-image: radial-gradient(rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.075) 90%, rgba(255,255,255,0) 110%);
     border: 4px solid rgba(255,255,255,0.2);
-    // animation: pulse 2s linear 0s infinite alternate;
 }
+
 
 .nav {
     align-content: center;
     justify-content: space-around;
     padding: 0px 20px 20px 20px;
 }
+
 
 .nav a {
     color: #ddd;

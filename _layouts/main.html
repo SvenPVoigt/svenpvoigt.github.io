@@ -15,12 +15,37 @@
 </head>
 
 <body>
-    <div class="mainDiv" style="z-index:1;">{{content}}</div>
+    <div id="overlay" class="mainDiv" style="visibility: hidden; z-index:1;">
+        <img id="catjam" style="visibility: hidden;" class="show" src="/static/images/catjam.gif" alt="catjam"> 
+    </div>
+    <div class="mainDiv" style="z-index:0;">{{content}}</div>
     <div class="mainDiv darkBG" style="z-index:-1; grid-template-columns: repeat(25, 4vw);">
         {% for i in (1..500) %}
         <div id="block{{i}}" style="height: 4vw; width: 4vw;"></div>
         {% endfor %}
     </div>
 </body>
+
+<script>
+    // var overlay = document.getElementById("overlay");
+
+    // console.log(overlay);
+
+    var memes = document.getElementById("link-memes");
+    var catjamgif = document.getElementById("catjam");
+
+    console.log(memes);
+
+    window.onload = function() {
+        memes.href = "javascript: void(0)";
+        memes.onclick = catjam;
+    }
+
+    catjam = function() {
+        catjamgif.style.visibility = "visible";
+    }
+
+
+</script>
 
 </html>
