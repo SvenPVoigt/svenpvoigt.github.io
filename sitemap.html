@@ -1,0 +1,13 @@
+---
+layout: main
+title: sitemap
+---
+
+<div class=mainDiv style="background-color: black;">
+    <div><h1>SiteMap</h1></div>
+    <div class="nav">
+        {% for page in site.pages %}
+        <a href="{{page.url}}">{{ page.url }}</a>
+        {% endfor %}
+    </div>
+</div>

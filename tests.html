@@ -8,7 +8,9 @@ description: Testing different html, css, and js functionality
 
 <head>
     <!-- Metadata Values --> 
-    {% include meta.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{site.description}} {{page.description}}" />
 
     <title>{{site.title}} - {{page.title}}</title>
 

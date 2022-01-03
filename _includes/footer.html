@@ -1,0 +1,27 @@
+<div class="nav left-right" style="height:10vh;">
+    <a itemscope href="/">
+        Home
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "url": "https://svenpvoigt.github.io",
+                "name": "The personal website of Sven",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sven Voigt"
+                }
+            }
+        </script>
+    </a>
+    <a href="/about">About</a>
+    <a href="/sitemap">Site Map</a>
+    <a href="/privacypolicy">Privacy Policy</a>
+    <a href="https://twitter.com/svenpvoigt" class="fa fa-twitter" data-show-count="false"></a>
+    <a href="#" id="copyright">&#169;</a>
+</div>
+
+<script>
+    var copyright = document.getElementById("copyright");
+    copyright.innerHTML = `${new Date().getFullYear()} &#169;`;
+</script>

@@ -1,0 +1,33 @@
+---
+layout: main
+---
+
+<div class="mainDiv left-right-10-90">
+    <div class="ListSideBar" style="background-color: rgb(255,230,255); padding-top:6vh;">
+        <a class="DarkText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../">Blog</a>
+        <a class="DarkText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../travel">Travel</a>
+        <a class="DarkText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../science">Science</a>
+        <a class="DarkText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../economics">Economics</a>
+        <a class="DarkText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../environment">Environment</a>
+    </div>
+    <div class="TitlePlusContent" style="background-color: rgba(54, 181, 255, 0.25);">
+        <div>
+            <h1 id="recentPostsTitle" class="Title DarkText">
+                Recent {{page.categories[0]}} Posts
+            </h1>
+        </div>
+        <div class="List">
+            {% assign blogPosts = site.posts %}
+            {% for cat in page.categories %}
+                {% assign blogPosts = blogPosts | where_exp: "item", "item.categories contains cat" %}
+            {% endfor %}
+    
+            {% for post in blogPosts %}
+                <a href="{{post.url}}">{{ post.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="footerDiv" id="main-bottom10" style="height:10vh; width:100vw;">
+    {% include footer.html %}
+</div>

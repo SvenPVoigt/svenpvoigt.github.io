@@ -1,5 +1,7 @@
 ---
-layout: collection-main
+layout: projects
+title: Projects
+description: A list of ongoing projects.
 ---
 
-{{ page.collection }}
+<h1> Coming soon! </h1>

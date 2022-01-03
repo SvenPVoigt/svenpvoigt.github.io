@@ -1,16 +1,12 @@
-<div style="justify-content:space-around; align-content: center;">
-    <div class="nav transparentFloat">
-        <h1>SVENV</h1>
-        {% for collection in site.collections %}
-            {% if collection.label != "posts" %}
+{% assign labels = "blog,projects,tutorials,polls" | split: "," %}
 
-            <a id="link-{{collection.label}}" class="navlink" style="font-size: 3vw;" href="/{{ collection.label }}/">
-            <div style="justify-content: space-around;">
-                <div style="font-size: 5vh;">{{ collection.label }}</div>
-            </div>
-            </a>
 
-            {% endif %}
-        {% endfor %}
-    </div>
+{% for lab in labels %}
+
+<a id="link-{{lab}}" class="navlink LightText" style="font-size: 3vw;" href="/{{ lab }}/">
+<div style="justify-content: space-around;">
+    <div style="font-size: 5vh;">{{ lab }}</div>
 </div>
+</a>
+
+{% endfor %}

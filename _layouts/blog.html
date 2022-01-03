@@ -1,0 +1,28 @@
+---
+layout: main
+---
+
+
+<div class="mainDiv left-right-10-90">
+    <div class="List" style="background-color: rgb(31, 115, 163); padding-top:6vh;">
+        <a class="LightText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../">Blog</a>
+        <a class="LightText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../travel">Travel</a>
+        <a class="LightText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../science">Science</a>
+        <a class="LightText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../economics">Economics</a>
+        <a class="LightText" style="width:8vw; padding-left:1vw; padding-right:1vw;" href="../environment">Environment</a>
+    </div>
+    <div class="TitlePlusContent">
+        <div class="Title">
+            <h2>{{page.title}}</h2>
+            <p>{{page.date | date_to_string: "ordinal"}}, <a href="/about">Sven Voigt</a></p>
+        </div>
+        <div class="Content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+<div class="footerDiv" id="main-bottom10" style="height:10vh; width:100vw;">
+    
+    {% include footer.html %}
+
+</div>
