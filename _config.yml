@@ -1,0 +1,88 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Sven Voigt
+email: svenpvoigt@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Hop in the van and read my posts on the drive. You'll need the information later.
+  What do you mean why? Yeah we're stealing the Declaration of Independence.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: svenpvoigt
+github_username:  SvenPVoigt
+
+# Build settings
+markdown: kramdown
+# theme: minima
+# minima:
+#   skin: dark
+
+
+plugins:
+  - jekyll-spaceship
+# collections:
+#   blog:
+#     output: true
+#     description: >-
+#       This blog is an expression of artistic or critical thoughts.
+
+  # tutorials:
+  #   output: true
+  #   description: >-
+  #     There are some things that I have to do every so often but not often
+  #     enough that I remember them by heart. These tutorials help me remember 
+  #     what I've done in the past that worked. I also want to share that 
+  #     information because it defines the possibilities for others.
+
+  # projects:
+  #   output: true
+  #   description: >-
+  #     Projects are a demonstration of innovative work. The purposes can include
+  #     scientific improvements, logical improvements, simplification of tasks,
+  #     or automation of tasks. They include different applications and may link 
+  #     to other sites.
+      
+  # about:
+  #   output: true
+  #   description: >-
+  #     Learn about the site and the author.
+
+  # polls:
+  #   output: true
+  #   description: >-
+  #     I want to learn from you. Fill out some polls and let's learn about each
+  #     other.
+
+  # memes:
+  #   output: true
+  #   description: >-
+  #     Sharing laughter. Not strictly memes, but rather any amusing post or story
+  #     is shared here. This will likely be the most complete section of my website.
+
+
+permalink: /:categories/:title:output_ext
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

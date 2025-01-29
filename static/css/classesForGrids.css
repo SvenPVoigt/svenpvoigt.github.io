@@ -1,0 +1,14 @@
+.griditem {
+    display: grid;
+}
+
+.gridrow {
+    display: grid;
+    width: 100fr;
+}
+
+.gridfill {
+    display: grid;
+    height: 100fr;
+    width: 100fr;
+}

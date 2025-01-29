@@ -1,0 +1,158 @@
+---
+---
+
+
+:root {
+    --left-width: 150px;
+    --top-height: 50px;
+    --c-primary-light: #facaa3;
+    --c-primary-medium: #fdac40;
+    --c-primary-dark: #e95c08;
+    --c-opposite-light: #a3b4fa;
+    --c-opposite-medium: #5d40fd;
+    --c-opposite-dark: #0879e9;
+    --c-complementary-light: #faf6a3;
+    --c-complementary-medium: #e1fd40;
+    --c-complementary-dark: #e9cb08;
+    --c-oppcomp-light: #f1a3fa;
+    --c-oppcomp-medium: #fd40e1;
+    --c-oppcomp-dark: #b108e9; 
+    --c-primary2-light: #48b1f2;
+    --c-primary2-dark: #013040;
+}
+
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--c-primary2-dark);
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+}
+
+.fullscreen {
+    height:100vh;
+    width:100vw;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: var(--top-height) 1fr;
+}
+
+.row {
+    grid-auto-flow:column;
+}
+
+.top {
+    align-content: start;
+}
+
+.vmiddle {
+    align-content:center;
+}
+
+.bottom {
+    grid-auto-rows: 1fr;
+    align-content: start;
+}
+
+.left {
+    justify-content: start;
+}
+
+.hmiddle {
+    justify-content: center;
+}
+
+.right {
+    justify-content: end;
+}
+
+.equalspacing {
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+}
+
+.spaced {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.padded {
+    padding: 10px;
+}
+
+.padded-left {
+    padding-left: 20px;
+}
+
+.leftwidth {
+    width: var(--left-width);
+}
+
+.topheight {
+    height: var(--top-height);
+}
+
+.leftmainseparator {
+    grid-auto-columns: var(--left-width) 1fr;
+}
+
+.topmainseparator {
+    grid-auto-rows: var(--top-height) 1fr;
+}
+
+.overflow {
+    overflow:auto;
+}
+
+.contentbox {
+    padding-top:5%;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.sitenav {
+    text-decoration: none;
+    text-align: center;
+    text-justify: distribute;
+    font-weight: bolder;
+}
+
+.card {
+    background-color: var(--c-primary2-light); 
+    border-radius: 4px;
+}
+
+.shadow {
+    box-shadow: 2px 2px 1px rgb(90, 90, 90);
+}
+
+.highlighter>*:hover {
+    background-color:rgba(255, 255, 255, 0.253);
+}
+
+.cardrack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 20px;
+    padding: 5%;
+}
+
+
+.headerp {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cardrack {
+        grid-template-columns: 1fr;
+    }
+}

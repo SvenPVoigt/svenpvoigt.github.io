@@ -1,0 +1,77 @@
+/*
+The header will just be a hamburger icon that, when
+clicked, overlays a page with transparency and links
+*/
+
+
+/* links general */
+a:link {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: #333;
+}
+a:hover {
+  color: #666;
+}
+
+/* links menu */
+a.home:link {
+  color: #ddd;
+  font-size: 2em;
+  display: block;
+}
+a.home:visited {
+  color: #ddd;
+  font-size: 2em;
+  display: block;
+}
+a.home:hover {
+  color: #ddd;
+  font-size: 2em;
+  display: block;
+}
+
+a.headerlink:link {
+  color: #ddd;
+  font-size: 1.2em;
+  display: block;
+}
+
+a.headerlink:visited {
+  color: #ddd;
+}
+a.headerlink:hover {
+  color: #888;
+}
+
+/* Defining the overlay */
+div.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #522c;
+  z-index: 1000;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  border-width: 0px;
+  padding: 2vw;
+}
+
+div.menubar {
+  cursor: default;
+  top: 0;
+  grid-row: 1;
+  margin: 2vw;
+}
+
+div.verticallinks {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: left;
+  grid-gap: 2.5vh
+}

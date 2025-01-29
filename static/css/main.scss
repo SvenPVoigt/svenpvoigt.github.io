@@ -1,0 +1,9 @@
+@use 'builtins.css';
+@use 'classesForGrids.css';
+@use 'classesForLayers.css';
+
+
+.fullSize {
+  height: 100dvh;
+  width: 100vw;
+}
