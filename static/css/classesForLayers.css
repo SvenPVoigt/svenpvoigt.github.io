@@ -1,6 +1,15 @@
-background {
+.background {
     z-index: -1;
 }
-foreground {
+.mainLayer {
+    z-index: 1;
+}
+.foreground {
     z-index: 10;
+}
+.hidden {
+    visibility: hidden;
+}
+.shown {
+    visibility: visible;
 }

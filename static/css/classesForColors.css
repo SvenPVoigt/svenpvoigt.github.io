@@ -1,0 +1,15 @@
+.black {
+    color: rgb(231, 231, 231);
+    background-color: rgb(24, 24, 24);
+}
+
+.dark {
+    color:rgb(238, 250, 215);
+    background-color:rgb(36, 16, 85);
+}
+
+
+.light {
+    color: rgb(36,16,85);
+    background-color:rgb(238, 250, 215);
+}

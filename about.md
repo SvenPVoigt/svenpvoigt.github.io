@@ -1,6 +1,6 @@
 ---
-layout: titlePlusContent
-title: About The Creator
+layout: tutorial
+title: About Sven
 ---
 
 <center>
@@ -9,5 +9,5 @@ title: About The Creator
 <br>
 
 <p style="font-size: 2.5vh; margin-bottom:5px;">
-Hey I'm Sven Voigt and on this page you can find links to my articles and tutorials.
+Hey I'm Sven Voigt and on this website you can find links to my articles and tutorials.
 </p>
