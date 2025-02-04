@@ -1,0 +1,412 @@
+{
+    "https://w3id.org/oc/meta/br/06503267503": {
+        "p": "https://dblp.org/rec/conf/semweb/AuerBKLCI07",
+        "omid": "https://w3id.org/oc/meta/br/06503267503",
+        "title": "DBpedia: A Nucleus for a Web of Open Data.",
+        "publication": "ISWC/ASWC",
+        "year": "2007",
+        "doi": "https://doi.org/10.1007/978-3-540-76298-0_52",
+        "author_list": [
+            "https://dblp.org/pid/18/1671",
+            "https://dblp.org/pid/05/6406",
+            "https://dblp.org/pid/i/ZacharyGIves",
+            "https://dblp.org/pid/b/ChristianBizer",
+            "https://dblp.org/pid/81/3336",
+            "https://dblp.org/pid/71/4882"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06303800988",
+            "https://w3id.org/oc/meta/br/06603698171",
+            "https://w3id.org/oc/meta/br/06703780559",
+            "https://w3id.org/oc/meta/br/061203264946",
+            "https://w3id.org/oc/meta/br/061403364392",
+            "https://w3id.org/oc/meta/br/061803236746",
+            "https://w3id.org/oc/meta/br/06203639866",
+            "https://w3id.org/oc/meta/br/061803377625",
+            "https://w3id.org/oc/meta/br/062603140058"
+        ],
+        "num_cites": "1878"
+    },
+    "https://w3id.org/oc/meta/br/061203264946": {
+        "p": "https://dblp.org/rec/conf/www/SuchanekKW07",
+        "omid": "https://w3id.org/oc/meta/br/061203264946",
+        "title": "Yago: a core of semantic knowledge.",
+        "publication": "WWW",
+        "year": "2007",
+        "doi": "https://doi.org/10.1145/1242572.1242667",
+        "author_list": [
+            "https://dblp.org/pid/w/GerhardWeikum",
+            "https://dblp.org/pid/69/3216",
+            "https://dblp.org/pid/13/1396"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06303689328",
+            "https://w3id.org/oc/meta/br/06103700612",
+            "https://w3id.org/oc/meta/br/062403360935",
+            "https://w3id.org/oc/meta/br/062503363062",
+            "https://w3id.org/oc/meta/br/062603063677",
+            "https://w3id.org/oc/meta/br/061403118787",
+            "https://w3id.org/oc/meta/br/06403445771",
+            "https://w3id.org/oc/meta/br/061403365988",
+            "https://w3id.org/oc/meta/br/06503710126",
+            "https://w3id.org/oc/meta/br/06203801488",
+            "https://w3id.org/oc/meta/br/06503697957",
+            "https://w3id.org/oc/meta/br/06103791387",
+            "https://w3id.org/oc/meta/br/061602101836",
+            "https://w3id.org/oc/meta/br/062403361154"
+        ],
+        "num_cites": "1947"
+    },
+    "https://w3id.org/oc/meta/br/06603698171": {
+        "p": "https://dblp.org/rec/conf/www/VolkelKVHS06",
+        "omid": "https://w3id.org/oc/meta/br/06603698171",
+        "title": "Semantic Wikipedia.",
+        "publication": "WWW",
+        "year": "2006",
+        "doi": "https://doi.org/10.1145/1135777.1135863",
+        "author_list": [
+            "https://dblp.org/pid/75/3067",
+            "https://dblp.org/pid/59/5618",
+            "https://dblp.org/pid/35/1232",
+            "https://dblp.org/pid/s/RudiStuder",
+            "https://dblp.org/pid/85/782"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/0660718909",
+            "https://w3id.org/oc/meta/br/061401792984",
+            "https://w3id.org/oc/meta/br/061801200674",
+            "https://w3id.org/oc/meta/br/061402583586",
+            "https://w3id.org/oc/meta/br/061803347813"
+        ],
+        "num_cites": "196"
+    },
+    "https://w3id.org/oc/meta/br/061803377625": {
+        "p": "https://dblp.org/rec/conf/icde/HalevyIST03",
+        "omid": "https://w3id.org/oc/meta/br/061803377625",
+        "title": "Schema Mediation in Peer Data Management Systems.",
+        "publication": "ICDE",
+        "year": "2003",
+        "doi": "https://doi.org/10.1109/ICDE.2003.1260817",
+        "author_list": [
+            "https://dblp.org/pid/i/ZacharyGIves",
+            "https://dblp.org/pid/56/1548",
+            "https://dblp.org/pid/s/DanSuciu",
+            "https://dblp.org/pid/h/AlonYHalevy"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06130333493",
+            "https://w3id.org/oc/meta/br/06302043005",
+            "https://w3id.org/oc/meta/br/061603520488",
+            "https://w3id.org/oc/meta/br/061801408243",
+            "https://w3id.org/oc/meta/br/06903407868",
+            "https://w3id.org/oc/meta/br/061402583586",
+            "https://w3id.org/oc/meta/br/06603798573",
+            "https://w3id.org/oc/meta/br/06703784061",
+            "https://w3id.org/oc/meta/br/062601373591",
+            "https://w3id.org/oc/meta/br/06603794837",
+            "https://w3id.org/oc/meta/br/061801407489",
+            "https://w3id.org/oc/meta/br/06603798887",
+            "https://w3id.org/oc/meta/br/06903509717",
+            "https://w3id.org/oc/meta/br/06203639866",
+            "https://w3id.org/oc/meta/br/061801408242"
+        ],
+        "num_cites": "173"
+    },
+    "https://w3id.org/oc/meta/br/06303800988": {
+        "p": "https://dblp.org/rec/conf/sigmod/KementsietsidisAM03",
+        "omid": "https://w3id.org/oc/meta/br/06303800988",
+        "title": "Mapping Data in Peer-to-Peer Systems: Semantics and Algorithmic Issues.",
+        "publication": "SIGMOD Conference",
+        "year": "2003",
+        "doi": "https://doi.org/10.1145/872757.872798",
+        "author_list": [
+            "https://dblp.org/pid/m/RJMiller",
+            "https://dblp.org/pid/76/6735",
+            "https://dblp.org/pid/41/5464"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/061203522567",
+            "https://w3id.org/oc/meta/br/061502810397",
+            "https://w3id.org/oc/meta/br/06803793740",
+            "https://w3id.org/oc/meta/br/0660578698",
+            "https://w3id.org/oc/meta/br/06103811302",
+            "https://w3id.org/oc/meta/br/061403364344",
+            "https://w3id.org/oc/meta/br/061303372547"
+        ],
+        "num_cites": "114"
+    },
+    "https://w3id.org/oc/meta/br/062603140058": {
+        "p": "https://dblp.org/rec/conf/esws/AuerL07",
+        "omid": "https://w3id.org/oc/meta/br/062603140058",
+        "title": "What Have Innsbruck and Leipzig in Common? Extracting Semantics from Wiki Content.",
+        "publication": "ESWC",
+        "year": "2007",
+        "doi": "https://doi.org/10.1007/978-3-540-72667-8_36",
+        "author_list": [
+            "https://dblp.org/pid/71/4882",
+            "https://dblp.org/pid/05/6406"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06603698171",
+            "https://w3id.org/oc/meta/br/06190105616",
+            "https://w3id.org/oc/meta/br/062503094384",
+            "https://w3id.org/oc/meta/br/061701439338",
+            "https://w3id.org/oc/meta/br/06260927500",
+            "https://w3id.org/oc/meta/br/061101506130",
+            "https://w3id.org/oc/meta/br/06190105567",
+            "https://w3id.org/oc/meta/br/06503546578",
+            "https://w3id.org/oc/meta/br/06403799958",
+            "https://w3id.org/oc/meta/br/062503094395"
+        ],
+        "num_cites": "82"
+    },
+    "https://w3id.org/oc/meta/br/061403364392": {
+        "p": "https://dblp.org/rec/conf/sigmod/Wiederhold93",
+        "omid": "https://w3id.org/oc/meta/br/061403364392",
+        "title": "Intelligent Integration of Information.",
+        "publication": "SIGMOD Conference",
+        "year": "1993",
+        "doi": "https://doi.org/10.1145/170036.170118",
+        "author_list": [
+            "https://dblp.org/pid/w/GioWiederhold"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/0640693862",
+            "https://w3id.org/oc/meta/br/0660578698",
+            "https://w3id.org/oc/meta/br/061303372951",
+            "https://w3id.org/oc/meta/br/0640693575"
+        ],
+        "num_cites": "46"
+    },
+    "https://w3id.org/oc/meta/br/061603301729": {
+        "p": "https://dblp.org/rec/journals/neco/HochreiterS97",
+        "omid": "https://w3id.org/oc/meta/br/061603301729",
+        "title": "Long Short-Term Memory.",
+        "publication": "Neural Comput.",
+        "year": "1997",
+        "doi": "https://doi.org/10.1162/NECO.1997.9.8.1735",
+        "author_list": [
+            "https://dblp.org/pid/s/JurgenSchmidhuber",
+            "https://dblp.org/pid/h/SeppHochreiter"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/061503295185",
+            "https://w3id.org/oc/meta/br/06302299411",
+            "https://w3id.org/oc/meta/br/061503295107",
+            "https://w3id.org/oc/meta/br/061503295109",
+            "https://w3id.org/oc/meta/br/061803495891",
+            "https://w3id.org/oc/meta/br/061503295227",
+            "https://w3id.org/oc/meta/br/06802321319",
+            "https://w3id.org/oc/meta/br/06802321301",
+            "https://w3id.org/oc/meta/br/06130196595",
+            "https://w3id.org/oc/meta/br/06130196447",
+            "https://w3id.org/oc/meta/br/061603080041",
+            "https://w3id.org/oc/meta/br/061301939514",
+            "https://w3id.org/oc/meta/br/06150535811",
+            "https://w3id.org/oc/meta/br/06901964712",
+            "https://w3id.org/oc/meta/br/061503295179",
+            "https://w3id.org/oc/meta/br/061401899884",
+            "https://w3id.org/oc/meta/br/06130196527",
+            "https://w3id.org/oc/meta/br/061503295263"
+        ],
+        "num_cites": "49485"
+    },
+    "https://w3id.org/oc/meta/br/0650349701": {
+        "p": "https://dblp.org/rec/journals/nature/LeCunBH15",
+        "omid": "https://w3id.org/oc/meta/br/0650349701",
+        "title": "Deep learning.",
+        "publication": "Nat.",
+        "year": "2015",
+        "doi": "https://doi.org/10.1038/NATURE14539",
+        "author_list": [
+            "https://dblp.org/pid/l/YannLeCun",
+            "https://dblp.org/pid/10/3248",
+            "https://dblp.org/pid/56/953"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06130564161",
+            "https://w3id.org/oc/meta/br/0690487470",
+            "https://w3id.org/oc/meta/br/062403062305",
+            "https://w3id.org/oc/meta/br/06102550389",
+            "https://w3id.org/oc/meta/br/06190694740",
+            "https://w3id.org/oc/meta/br/0660101827",
+            "https://w3id.org/oc/meta/br/06120344742",
+            "https://w3id.org/oc/meta/br/061603301692",
+            "https://w3id.org/oc/meta/br/06901817116",
+            "https://w3id.org/oc/meta/br/061501315189",
+            "https://w3id.org/oc/meta/br/06180582297",
+            "https://w3id.org/oc/meta/br/061503294547",
+            "https://w3id.org/oc/meta/br/06102430459",
+            "https://w3id.org/oc/meta/br/0680106156",
+            "https://w3id.org/oc/meta/br/06120195335",
+            "https://w3id.org/oc/meta/br/06903234382",
+            "https://w3id.org/oc/meta/br/062203320651",
+            "https://w3id.org/oc/meta/br/06150193614",
+            "https://w3id.org/oc/meta/br/061403281658",
+            "https://w3id.org/oc/meta/br/061201496069",
+            "https://w3id.org/oc/meta/br/0660101879",
+            "https://w3id.org/oc/meta/br/06180690548",
+            "https://w3id.org/oc/meta/br/0660101785",
+            "https://w3id.org/oc/meta/br/06150193442",
+            "https://w3id.org/oc/meta/br/0670485681",
+            "https://w3id.org/oc/meta/br/06250481911",
+            "https://w3id.org/oc/meta/br/0630483589",
+            "https://w3id.org/oc/meta/br/06120298359",
+            "https://w3id.org/oc/meta/br/06303539496",
+            "https://w3id.org/oc/meta/br/061603301729",
+            "https://w3id.org/oc/meta/br/06802321319",
+            "https://w3id.org/oc/meta/br/062203225296",
+            "https://w3id.org/oc/meta/br/06802321315",
+            "https://w3id.org/oc/meta/br/06220348544",
+            "https://w3id.org/oc/meta/br/06190647203",
+            "https://w3id.org/oc/meta/br/06203413666",
+            "https://w3id.org/oc/meta/br/06301414134",
+            "https://w3id.org/oc/meta/br/06302311925",
+            "https://w3id.org/oc/meta/br/06301414164",
+            "https://w3id.org/oc/meta/br/0650350561"
+        ],
+        "num_cites": "47450"
+    },
+    "https://w3id.org/oc/meta/br/06170568343": {
+        "p": "https://dblp.org/rec/journals/bioinformatics/LiHWFRHMAD09",
+        "omid": "https://w3id.org/oc/meta/br/06170568343",
+        "title": "The Sequence Alignment/Map format and SAMtools.",
+        "publication": "Bioinform.",
+        "year": "2009",
+        "doi": "https://doi.org/10.1093/BIOINFORMATICS/BTP352",
+        "author_list": [
+            "https://dblp.org/pid/16/7063",
+            "https://dblp.org/pid/47/3259",
+            "https://dblp.org/pid/52/5281",
+            "https://dblp.org/pid/55/7252",
+            "https://dblp.org/pid/61/3077",
+            "https://dblp.org/pid/72/111",
+            "https://dblp.org/pid/d/RichardDurbin",
+            "https://dblp.org/pid/02/3672-2",
+            "https://dblp.org/pid/16/1514"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06501029207",
+            "https://w3id.org/oc/meta/br/06101039979",
+            "https://w3id.org/oc/meta/br/06120873033",
+            "https://w3id.org/oc/meta/br/06101039948"
+        ],
+        "num_cites": "44320"
+    },
+    "https://w3id.org/oc/meta/br/06140561512": {
+        "p": "https://dblp.org/rec/journals/bioinformatics/BolgerLU14",
+        "omid": "https://w3id.org/oc/meta/br/06140561512",
+        "title": "Trimmomatic: a flexible trimmer for Illumina sequence data.",
+        "publication": "Bioinform.",
+        "year": "2014",
+        "doi": "https://doi.org/10.1093/BIOINFORMATICS/BTU170",
+        "author_list": [
+            "https://dblp.org/pid/70/8708",
+            "https://dblp.org/pid/03/8710",
+            "https://dblp.org/pid/94/2622"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06801044258",
+            "https://w3id.org/oc/meta/br/06250322318",
+            "https://w3id.org/oc/meta/br/062102773680",
+            "https://w3id.org/oc/meta/br/06101040064",
+            "https://w3id.org/oc/meta/br/062401547963",
+            "https://w3id.org/oc/meta/br/06170568414",
+            "https://w3id.org/oc/meta/br/06120873033",
+            "https://w3id.org/oc/meta/br/06170567779",
+            "https://w3id.org/oc/meta/br/06502146577",
+            "https://w3id.org/oc/meta/br/06801044509"
+        ],
+        "num_cites": "40472"
+    },
+    "https://w3id.org/oc/meta/br/06170568414": {
+        "p": "https://dblp.org/rec/journals/bioinformatics/LiD09",
+        "omid": "https://w3id.org/oc/meta/br/06170568414",
+        "title": "Fast and accurate short read alignment with Burrows-Wheeler transform.",
+        "publication": "Bioinform.",
+        "year": "2009",
+        "doi": "https://doi.org/10.1093/BIOINFORMATICS/BTP324",
+        "author_list": [
+            "https://dblp.org/pid/02/3672-2",
+            "https://dblp.org/pid/d/RichardDurbin"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06101039948",
+            "https://w3id.org/oc/meta/br/06501029207",
+            "https://w3id.org/oc/meta/br/06170568593",
+            "https://w3id.org/oc/meta/br/06170568499",
+            "https://w3id.org/oc/meta/br/06180571284",
+            "https://w3id.org/oc/meta/br/06180570962",
+            "https://w3id.org/oc/meta/br/06401486387",
+            "https://w3id.org/oc/meta/br/06180571287",
+            "https://w3id.org/oc/meta/br/06180570760",
+            "https://w3id.org/oc/meta/br/06803239157",
+            "https://w3id.org/oc/meta/br/06170568605",
+            "https://w3id.org/oc/meta/br/061502810858",
+            "https://w3id.org/oc/meta/br/06180570947",
+            "https://w3id.org/oc/meta/br/06170568502"
+        ],
+        "num_cites": "35605"
+    },
+    "https://w3id.org/oc/meta/br/0690909444": {
+        "p": "https://dblp.org/rec/journals/jcc/PettersenGHCGMF04",
+        "omid": "https://w3id.org/oc/meta/br/0690909444",
+        "title": "UCSF Chimera - A visualization system for exploratory research and analysis.",
+        "publication": "J. Comput. Chem.",
+        "year": "2004",
+        "doi": "https://doi.org/10.1002/JCC.20084",
+        "author_list": [
+            "https://dblp.org/pid/32/5633",
+            "https://dblp.org/pid/08/4436",
+            "https://dblp.org/pid/03/6830",
+            "https://dblp.org/pid/93/6107",
+            "https://dblp.org/pid/66/932",
+            "https://dblp.org/pid/66/790",
+            "https://dblp.org/pid/52/668"
+        ],
+        "ref_list": [
+            "https://w3id.org/oc/meta/br/06150488091",
+            "https://w3id.org/oc/meta/br/061101042723",
+            "https://w3id.org/oc/meta/br/06101365054",
+            "https://w3id.org/oc/meta/br/06160991584",
+            "https://w3id.org/oc/meta/br/062603539818",
+            "https://w3id.org/oc/meta/br/061401837103",
+            "https://w3id.org/oc/meta/br/062101336085",
+            "https://w3id.org/oc/meta/br/06704028756",
+            "https://w3id.org/oc/meta/br/06130362189",
+            "https://w3id.org/oc/meta/br/06501307048",
+            "https://w3id.org/oc/meta/br/06504164985",
+            "https://w3id.org/oc/meta/br/0650550297",
+            "https://w3id.org/oc/meta/br/0630793825",
+            "https://w3id.org/oc/meta/br/0610355118",
+            "https://w3id.org/oc/meta/br/061301847625",
+            "https://w3id.org/oc/meta/br/06160486804",
+            "https://w3id.org/oc/meta/br/06103950233",
+            "https://w3id.org/oc/meta/br/06190369140",
+            "https://w3id.org/oc/meta/br/06504165042",
+            "https://w3id.org/oc/meta/br/06140351285",
+            "https://w3id.org/oc/meta/br/061801143642",
+            "https://w3id.org/oc/meta/br/06240920497",
+            "https://w3id.org/oc/meta/br/06501307073",
+            "https://w3id.org/oc/meta/br/06210323756",
+            "https://w3id.org/oc/meta/br/062501334828",
+            "https://w3id.org/oc/meta/br/0610252273",
+            "https://w3id.org/oc/meta/br/06201714162",
+            "https://w3id.org/oc/meta/br/062603539708",
+            "https://w3id.org/oc/meta/br/062101335494",
+            "https://w3id.org/oc/meta/br/06301256466",
+            "https://w3id.org/oc/meta/br/062403710095",
+            "https://w3id.org/oc/meta/br/062303765470",
+            "https://w3id.org/oc/meta/br/061901348196",
+            "https://w3id.org/oc/meta/br/06201117792",
+            "https://w3id.org/oc/meta/br/0690255699",
+            "https://w3id.org/oc/meta/br/06801044934",
+            "https://w3id.org/oc/meta/br/06501051446",
+            "https://w3id.org/oc/meta/br/0670248224",
+            "https://w3id.org/oc/meta/br/06250482203",
+            "https://w3id.org/oc/meta/br/061101861898",
+            "https://w3id.org/oc/meta/br/061103791588"
+        ],
+        "num_cites": "34808"
+    }
+}

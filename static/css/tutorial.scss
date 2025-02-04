@@ -15,8 +15,9 @@
 }
 
 #articleDescription {
+    padding-bottom: 0.25rem;
     border-bottom: 1px solid #636363;
-    margin-bottom:3rem;
+    // margin-bottom:3rem;
 }
 #backBar {
     grid-area: bc;
@@ -28,8 +29,16 @@
 
 #article > p {
     margin-bottom:0.5rem;
+    text-align:justify;
 }
 
-#article > input {
-    border: 1px solid black;
+#article > h1 {
+    margin-top:3rem;
+    color:white;
+    font-size: 0;
+}
+
+#article > h2 {
+    text-align: right;
+    align-content: right;
 }

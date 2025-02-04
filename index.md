@@ -15,7 +15,7 @@ script: index
         <!-- <img src="/static/images/icon.svg" style="width:4rem;"> -->
     </div>
     <div id="headTitle">
-        <h1>Sven Voigt</h1>
+        <a href="/about"><h1>Sven Voigt</h1></a>
     </div>
 </div>
 
