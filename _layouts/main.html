@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="/static/css/{{page.stylesheet}}.css">
     {% endif %}
     {% if page.script %}
-    <script type="text/javascript" src="/static/js/{{page.script}}.js"></script>
+    <script type="module" src="/static/js/{{page.script}}.js"></script>
     {% endif %}
     {% if layout.stylesheet %}
     <link rel="stylesheet" href="/static/css/{{layout.stylesheet}}.css">
     {% endif %}
     {% if layout.script %}
-    <script type="text/javascript" src="/static/js/{{layout.script}}.js"></script>
+    <script type="module" src="/static/js/{{layout.script}}.js"></script>
     {% endif %}
 
 </head>

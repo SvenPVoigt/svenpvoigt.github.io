@@ -7,6 +7,11 @@
     z-index: 1;
 }
 
+body {
+    font-size: 0.7rem;
+    line-height: 1.8;
+}
+
 a {
     color: inherit;
     text-decoration:none;

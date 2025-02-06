@@ -6,6 +6,7 @@ date: 2025-02-01
 script: CitationGraph
 ---
 
+
 # .
 
 How often have you found yourself searching through the references of a paper to find the more original works that explain the basis of what is going on the paper you are reading? Or are you simply trying to broaden your horizons and see what the notable related works are?
@@ -19,4 +20,4 @@ Perhaps this has led you to a similar problem as myself, where you spend a signi
 <label for="doi">DOI:</label>
 <input id="doi" type="text" size="50" value="10.1007/978-3-540-76298-0_52"/>
 
-<!-- </section> -->
+<div id="d3container"></div>
