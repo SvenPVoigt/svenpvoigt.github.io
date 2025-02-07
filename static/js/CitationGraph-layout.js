@@ -35,7 +35,7 @@ function computeWidth(data, root, layout) {
         for (let nodeId of layer) {
             parentWidths.push( avg( data[nodeId]["parentIds"].map(parentId=> { 
                 if(parentId in layout["nodes"]) {
-                    layout.edges.push([parentId, nodeId]);
+                    layout.edges.push({source: parentId, target: nodeId});
                     return layout["nodes"][parentId].w; 
                 }
             } ) ) );

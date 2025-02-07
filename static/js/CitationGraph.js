@@ -1,8 +1,8 @@
 import { fetchOMID, fetchMetadata, fetchLargeMetadata, metadataMap } from "/static/js/CitationGraph-SPARQL.js";
-import { graph } from "./CitationGraph-d3Graph.js";
+// import { graph } from "./CitationGraph-d3Graph.js";
 import { parseCites, fixSelfCycles, pruneDAG, addChildren } from "./CitationGraph-traverse.js";
 import { buildLayout } from "/static/js/CitationGraph-layout.js";
-import { plotLayout } from "/static/js/Citation-plot.js"
+import { graph } from "/static/js/Citation-plot.js"
 
 
 async function sparqlData() {
@@ -61,13 +61,13 @@ async function sparqlData() {
     return rootId;
 }
 
-function drawTree() {
-    d3container.append(graph(data, {label: d=>`${d.data.name} (${d.data.num_cites})`}));
-}
+// function drawTree() {
+//     d3container.append(graph(data, {label: d=>`${d.data.name} (${d.data.num_cites})`}));
+// }
 
 
-function plotLayout(layout) {
-    d3container.append(plotLayout(layout));
+function plotLayout(layout, data) {
+    d3container.append(graph(layout, data));
 }
 
 
@@ -86,5 +86,5 @@ window.addEventListener("load", async () => {
     var layout = buildLayout(data, rootId);
     console.log(layout);
     // drawTree();
-    plotLayout(layout);
+    plotLayout(layout, data);
 });
