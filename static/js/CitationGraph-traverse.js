@@ -4,9 +4,23 @@ export function parseCites(data) {
     }
 }
 
-export function fixCycles(data) {
+export function fixSelfCycles(data) {
     for (let id in data) {
         data[id]["parentIds"] = data[id]["parentIds"].filter(parentId => parentId != id);
+    }
+}
+
+export function addChildren(data) {
+    for (let k in data) {
+        data[k]["children"] = new Set();
+    }
+    for (let k in data) {
+        console.log(k);
+        data[k]["parentIds"].forEach(parentId => {
+            if (parentId in data) {
+                data[parentId]["children"].add(k);
+            }
+        });
     }
 }
 
@@ -19,12 +33,15 @@ function getTopCites(data, n) {
     return ids.slice(0,n);
 }
 
-function idsReached(data, id, idSet) {
-    console.log(data);
-    console.log(id);
+var idsVisited = new Set();
+
+function collectReachableIds(data, id, idSet) {
+    idsVisited.add(id);
     data[id]["parentIds"].forEach(parentId => {
-        idSet.add(parentId);
-        idSet = idSet.union(idsReached(data, parentId, idSet));
+        if (!idsVisited.has(parentId)) {
+            idSet.add(parentId);
+            idSet = idSet.union(collectReachableIds(data, parentId, idSet));
+        }
     });
 
     return idSet;
@@ -33,16 +50,16 @@ function idsReached(data, id, idSet) {
 export function pruneDAG(data, n) {
     console.log(data);
     var topCitedIds = getTopCites(data, n);
-    var idSet = new Set();
+    var idsReached = new Set();
 
     for (let id of topCitedIds) {
-        idSet = idSet.union(idsReached(data, id, idSet));
+        idsReached = idsReached.union(collectReachableIds(data, id, idsReached));
     }
 
 
     var newData = {};
 
-    for (let id of idSet) {
+    for (let id of idsReached) {
         newData[id] = data[id];
     }
 

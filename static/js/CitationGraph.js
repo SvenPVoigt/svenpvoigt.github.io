@@ -1,6 +1,8 @@
 import { fetchOMID, fetchMetadata, fetchLargeMetadata, metadataMap } from "/static/js/CitationGraph-SPARQL.js";
 import { graph } from "./CitationGraph-d3Graph.js";
-import { parseCites, fixCycles, pruneDAG } from "./CitationGraph-traverse.js";
+import { parseCites, fixSelfCycles, pruneDAG, addChildren } from "./CitationGraph-traverse.js";
+import { buildLayout } from "/static/js/CitationGraph-layout.js";
+import { plotLayout } from "/static/js/Citation-plot.js"
 
 
 async function sparqlData() {
@@ -21,7 +23,8 @@ async function sparqlData() {
     console.log(metadata);
 
     var graph = {};
-    graph[metadata["id"]] = metadata;
+    var rootId = metadata["id"];
+    graph[rootId] = metadata;
 
     var currNodes = [metadata["id"]];
     var fetchedNodes;
@@ -54,6 +57,8 @@ async function sparqlData() {
     }
 
     console.log(graph);
+
+    return rootId;
 }
 
 function drawTree() {
@@ -61,13 +66,25 @@ function drawTree() {
 }
 
 
+function plotLayout(layout) {
+    d3container.append(plotLayout(layout));
+}
+
+
 var data;
 
 window.addEventListener("load", async () => {
+    var rootId = "AuerBKLCI07" // await sparqlData();
     data = await fetch("/static/data/citationGraphInitial.json").then(r => r.json());
     parseCites(data);
-    fixCycles(data);
-    data = pruneDAG(data, 10);
-    // await sparqlData();
+    fixSelfCycles(data);
+    data = pruneDAG(data, 20);
+    console.log(data);
+    addChildren(data);
+    console.log(data);
+    console.log(Object.keys(data));
+    var layout = buildLayout(data, rootId);
+    console.log(layout);
     // drawTree();
+    plotLayout(layout);
 });
