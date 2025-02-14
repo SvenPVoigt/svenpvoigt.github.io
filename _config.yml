@@ -72,7 +72,7 @@ plugins:
   #     is shared here. This will likely be the most complete section of my website.
 
 
-permalink: /:categories/:title:output_ext
+permalink: /:categories/:title/
 
 
 # Exclude from processing.
