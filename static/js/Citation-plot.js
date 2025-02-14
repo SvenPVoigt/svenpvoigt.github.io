@@ -82,7 +82,7 @@ export function graph(layout, data) {
         });
 
     const ttText = g.append("text")
-        .attr("font-size", "0.4rem")
+        .attr("font-size", "0.65rem")
         .attr("transform", `translate(5, 5)`);
   
     // node.append("circle")
@@ -145,7 +145,7 @@ export function graph(layout, data) {
         // .on("mouseout", () => tooltip.selectAll("text").remove());
   
     node.append("text")
-        .attr("font-size", "0.4rem")
+        .attr("font-size", "0.65rem")
         .attr("stroke", "white")
         .attr("stroke-width", "1px")
         .attr("paint-order", "stroke")

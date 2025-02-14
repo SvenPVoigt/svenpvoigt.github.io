@@ -1,0 +1,16 @@
+img {
+    width: 150px;
+    border-radius: 120px;
+}
+
+#socials * {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    img {
+      width: 100px; /* Show the hamburger menu */
+    }
+  }

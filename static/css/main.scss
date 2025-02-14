@@ -1,10 +1,54 @@
 ---
 ---
 
+:root {
+  --menu-bg-color: #d0d5da;
+  --dark-color: #323232;
+  --menu-height: 4rem;
+}
+
 @import 'builtins.css';
 @import 'classesForGrids.css';
 @import 'classesForLayers.css';
 @import 'classesForColors.css';
+@import 'classesForCards.css';
+
+
+#header {
+  height: var(--menu-height);
+  background-color: var(--menu-bg-color);
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  text-justify: center;
+}
+
+#headerTitle {
+  font-size: 2rem;
+  font-weight:900;
+  letter-spacing: 0.3rem;
+  color: var(--dark-color);
+}
+
+main {
+  min-height: calc(100dvh - 2 * var(--menu-height));
+}
+
+#footer {
+  height: var(--menu-height);
+  background-color: var(--menu-bg-color);
+}
+
+
+.socials * {
+  font-size:3em;
+}
+
+
+.pageTitle {
+  margin: 2em 0;
+  border-bottom: 1px solid var(--dark-color);
+}
 
 
 .fullSize {
