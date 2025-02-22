@@ -5,13 +5,13 @@ stylesheet: about
 ---
 
 
-<div class="row">
+<div class="rowDyn center margined spaced">
 
-<img src="{{ site.baseurl }}/static/images/Profile.JPG" style="padding:1em;" alt="Sven Voigt wearing a bow tie." class="profileImg"/>
+<img src="{{ site.baseurl }}/static/images/Profile.JPG" style="padding:1.5rem; border-radius:500px;" alt="Sven Voigt wearing a bow tie." class="profileImg"/>
 
-<div id="contactInfo" class="column left">
+<div id="contactInfo" class="column center">
 
-<h3>Ph.D. @ Georgia Tech, 2023</h3>
+<!-- <h3>Ph.D. @ Georgia Tech, 2023</h3> -->
 
 <a href="mailto:svenpvoigt@gmail.com"><h3>svenpvoigt@gmail.com</h3></a>
 <div class="row spaced">
@@ -23,10 +23,23 @@ stylesheet: about
 </div>
 </div>
 
-I'm developing the future of collaborative data management to enable the construction of datasets that will unlock AI for domains based on a shared understanding of the world and requiring information beyond text. This uses knowledge graphs and new multi-modal representations of datatypes for real-world measurements.
+<div class="rowDyn rowBorderedDyn2 bold2 spaced25 margined">
+<div class="center">Knowledge Graphs & Engineering</div>
+<div class="center">Ph.D./M.S. @ GT</div>
+<div class="center">Published in IEEE Signal Processing, Materials Letters, & Biomaterials</div>
+</div>
 
-I earned all of a *Material Science Ph.D.* and a *Computer Science M.S.* from **Georgia Tech**, and a *Materials Science M.S.* and *B.S.* from **CWRU**.
+I develop knowledge graphs for knowledge management, analysis & visualization, AI, and R&D. Currently working on:
+- Software for collaborative knowledge management that will unlock the potential of AI for organizations.
+- Publishing papers on knowledge management and schema design.
+- Collaborating on knowledge graph constructions across academia and industry.
+- Collaborating on AI analysis & visualization to unlock value of organization's data equity.
+- Contributing to open source graph databases.
 
-Last year was spent traveling, running, stretching, and rock climbing.
+My research at Georgia Tech involved developing new knowledge graph schemas and schema technologies to represent a large multi-modal set of materials knowledge. Applications required text to knowledge extraction, image to knowledge extraction, and extraction of key features from other datatypes using ad-hoc methods for simple datatypes and end-to-end deep learning for more complex datatypes like scientific measurements.
 
-My personal philosophy is most closely aligned with absurdism. I believe in organized chaos and in the mental virtues of focus, vision, and effort.
+Degrees earned include a *Material Science Ph.D.* and *Computer Science M.S.* from **Georgia Tech**, and a *Materials Science M.S.* and *B.S.* from **CWRU**.
+
+I enjoy traveling, running, yoga, calisthenics, and rock climbing.
+
+My personal philosophy is always evolving but focused around meaning and purpose being under our own control- creativity and perception are the key to unlocking personal growth and happiness. I believe that focus, vision, and effort lead success and accomplishments.

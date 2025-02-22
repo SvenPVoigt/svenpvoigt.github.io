@@ -1,0 +1,22 @@
+---
+title: Blog
+layout: list
+---
+
+
+
+
+{% assign sorted-blogs = site.categories.blog | sort: "date" | reverse %}
+{% for blog in sorted-blogs %}
+<a href="{{blog.url}}">
+<div class="blogCard">
+{% if blog.thumbnail %}
+<img class="blogThumbnail" src="/static/images/thumbnails/{{blog.thumbnail}}"/>
+{% else %}
+<img class="blogThumbnail" src="/static/images/thumbnails/missing.svg"/>
+{% endif %}
+<h3 class="blogTitle">{{blog.title}}</h3>
+<p class="blogDescription">{{blog.description}}</p>
+</div>
+</a>
+{% endfor %}

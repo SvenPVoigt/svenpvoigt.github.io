@@ -6,14 +6,15 @@
     grid-template-columns: 1fr minmax(375px, 3fr) 1fr;
 }
 
-#homepageLayout:last-child {
-    margin-bottom:100px;
-}
+// #homepageLayout:last-child {
+//     margin-bottom:100px;
+// }
 
 .homepageCard {
     grid-column: 2;
     text-align: justify;
     line-height: 1.5em;
+    margin-bottom: 9rem;
 }
 
 .homepageCard p {
@@ -27,7 +28,7 @@
 }
 
 .profileImg {
-    width: 150px;
+    width: 170px;
     border-radius: 120px;
 }
 
