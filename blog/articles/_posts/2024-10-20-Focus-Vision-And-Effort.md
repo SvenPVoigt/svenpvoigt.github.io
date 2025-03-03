@@ -1,6 +1,7 @@
 ---
 layout: blog
 description: The real secret to success.
+thumbnail: Focus-Vision-And-Effort.jpg
 ---
 
 

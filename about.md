@@ -29,17 +29,17 @@ stylesheet: about
 <div class="center">Published in IEEE Signal Processing, Materials Letters, & Biomaterials</div>
 </div>
 
-I develop knowledge graphs for knowledge management, analysis & visualization, AI, and R&D. Currently working on:
+I develop knowledge graphs for artificial intelligence, knowledge management, analysis & visualization, and the sciences. Currently working on:
 - Software for collaborative knowledge management that will unlock the potential of AI for organizations.
 - Publishing papers on knowledge management and schema design.
 - Collaborating on knowledge graph constructions across academia and industry.
 - Collaborating on AI analysis & visualization to unlock value of organization's data equity.
 - Contributing to open source graph databases.
 
-My research at Georgia Tech involved developing new knowledge graph schemas and schema technologies to represent a large multi-modal set of materials knowledge. Applications required text to knowledge extraction, image to knowledge extraction, and extraction of key features from other datatypes using ad-hoc methods for simple datatypes and end-to-end deep learning for more complex datatypes like scientific measurements.
+My research at Georgia Tech involved developing new knowledge graph schemas and schema technologies to represent a large multi-modal set of materials knowledge. Applications required text to knowledge extraction, image to knowledge extraction, and extraction of key features from other datatypes using standards-based methods for simple datatypes and end-to-end deep learning for more complex datatypes like scientific measurements.
 
 Degrees earned include a *Material Science Ph.D.* and *Computer Science M.S.* from **Georgia Tech**, and a *Materials Science M.S.* and *B.S.* from **CWRU**.
 
-I enjoy traveling, running, yoga, calisthenics, and rock climbing.
+I enjoy board games, running, calisthenics, yoga, and rock climbing. Formerly a musician and gardener, and I hope to return one day.
 
-My personal philosophy is always evolving but focused around meaning and purpose being under our own control- creativity and perception are the key to unlocking personal growth and happiness. I believe that focus, vision, and effort lead success and accomplishments.
+My personal philosophy focuses around meaning and purpose being under our own control- creativity and perception are the key to unlocking personal growth and happiness. I believe that focus, vision, and effort lead success and accomplishments.

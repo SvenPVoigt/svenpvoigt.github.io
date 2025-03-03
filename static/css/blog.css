@@ -1,3 +1,23 @@
 article * {
     line-height:2rem;
 }
+
+#articleDescription {
+    font-weight:400;
+    font-size:1.1rem;
+    font-style:italic;
+    margin-bottom: 5rem;
+}
+
+.blogThumbnail {
+    object-fit:cover;
+    object-position: center;
+    width: 70%;
+    aspect-ratio: 2.45/1;
+    margin: 4rem auto;
+    display: block;
+}
+
+h1, h2 {
+    margin-top: 3rem;
+}

@@ -29,6 +29,9 @@ markdown: kramdown
 # minima:
 #   skin: dark
 
+# highlighter: rouge
+#   input: GFM
+
 
 plugins:
   - jekyll-spaceship

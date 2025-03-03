@@ -83,11 +83,13 @@
     display: grid;
 }
 
-.blogCard .blogThumbnail {
-    width: 100%; /* Dtermine size of square */
-    aspect-ratio: 2/1; /* Keeps height equal to width */
-    object-fit: contain; /* No distortion of image, and no empty space */
-    // grid-row: span 2;
+.blogThumbnail {
+    object-fit:cover;
+    object-position: center;
+    width: 70%;
+    aspect-ratio: 2.45/1;
+    margin: 4rem auto;
+    display: block;
 }
 
 // .blogCard .blogTitle {

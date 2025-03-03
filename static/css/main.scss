@@ -2,7 +2,7 @@
 ---
 
 :root {
-  --menu-bg-color: #d0d5da;
+  --menu-bg-color: #d8dadc;
   --dark-color: #323232;
   --menu-height: 4rem;
 }
@@ -12,11 +12,12 @@
 @import 'classesForLayers.css';
 @import 'classesForColors.css';
 @import 'classesForCards.css';
+@import 'code.css';
 
 
 #header {
   height: var(--menu-height);
-  background-color: var(--menu-bg-color);
+  background-color: var(--dark-color);
   align-content: center;
   text-align: center;
   justify-content: center;
@@ -27,7 +28,7 @@
   font-size: 2rem;
   font-weight:900;
   letter-spacing: 0.3rem;
-  color: var(--dark-color);
+  color: var(--menu-bg-color);
 }
 
 main {
@@ -36,7 +37,11 @@ main {
 
 #footer {
   height: var(--menu-height);
-  background-color: var(--menu-bg-color);
+  background-color: var(--dark-color);
+}
+
+.menuColor {
+  color: var(--menu-bg-color);
 }
 
 

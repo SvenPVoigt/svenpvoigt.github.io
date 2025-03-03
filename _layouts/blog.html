@@ -13,8 +13,11 @@ stylesheet: blog
 {% if page.date %}
 <h2 id="articleDate">{{page.date | date_to_long_string: "ordinal", "US"}}</h2>
 {% endif %}
+{% if page.thumbnail %}
+<img id="blogThumbnail" class="blogThumbnail" src="/static/images/thumbnails/{{page.thumbnail}}"/>
+{% endif %}
 {% if page.description %}
-<h3 id="articleDescription">{{page.description}}</h3>
+<p id="articleDescription">{{page.description}}</p>
 {% endif %}
 <article>{{content}}</article>
 </div>

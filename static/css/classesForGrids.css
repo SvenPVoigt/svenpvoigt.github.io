@@ -12,6 +12,10 @@
     grid-template-columns: 1fr minmax(375px, 3fr) 1fr;
 }
 
+.centeredColumn > * {
+    grid-column: 2;
+}
+
 .row {
     display:grid;
     grid-auto-flow: column;
